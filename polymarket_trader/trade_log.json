@@ -1,1 +1,86 @@
-[]
+[
+  {
+    "action": "OPEN",
+    "market_id": "1627647",
+    "question": "Bucks vs. Clippers",
+    "side": "NO",
+    "price": 0.8693249999999999,
+    "shares": 5.1764299887844025,
+    "amount_usd": 4.5,
+    "strategy": "PENNY_PICK",
+    "edge": 0.081,
+    "category": "other",
+    "timestamp": "2026-03-23T09:34:45.782841+00:00",
+    "cash_after": 25.5
+  },
+  {
+    "action": "OPEN",
+    "market_id": "1627630",
+    "question": "Pacers vs. Magic",
+    "side": "NO",
+    "price": 0.8793749999999999,
+    "shares": 5.11727078891258,
+    "amount_usd": 4.5,
+    "strategy": "PENNY_PICK",
+    "edge": 0.075,
+    "category": "other",
+    "timestamp": "2026-03-23T09:34:45.783202+00:00",
+    "cash_after": 21.0
+  },
+  {
+    "action": "OPEN",
+    "market_id": "1627600",
+    "question": "Grizzlies vs. Hawks",
+    "side": "NO",
+    "price": 0.8793749999999999,
+    "shares": 5.11727078891258,
+    "amount_usd": 4.5,
+    "strategy": "PENNY_PICK",
+    "edge": 0.075,
+    "category": "other",
+    "timestamp": "2026-03-23T09:34:45.783493+00:00",
+    "cash_after": 16.5
+  },
+  {
+    "action": "OPEN",
+    "market_id": "1627632",
+    "question": "Thunder vs. 76ers",
+    "side": "YES",
+    "price": 0.9095249999999999,
+    "shares": 4.947637503092274,
+    "amount_usd": 4.5,
+    "strategy": "PENNY_PICK",
+    "edge": 0.05699999999999998,
+    "category": "other",
+    "timestamp": "2026-03-23T09:34:45.783798+00:00",
+    "cash_after": 12.0
+  },
+  {
+    "action": "OPEN",
+    "market_id": "1627644",
+    "question": "Nets vs. Trail Blazers",
+    "side": "NO",
+    "price": 0.9095249999999999,
+    "shares": 4.947637503092274,
+    "amount_usd": 4.5,
+    "strategy": "PENNY_PICK",
+    "edge": 0.05699999999999998,
+    "category": "sports",
+    "timestamp": "2026-03-23T09:34:45.784254+00:00",
+    "cash_after": 7.5
+  },
+  {
+    "action": "OPEN",
+    "market_id": "1581306",
+    "question": "Kharg Island no longer under Iranian control by March 31?",
+    "side": "NO",
+    "price": 0.8793749999999999,
+    "shares": 5.11727078891258,
+    "amount_usd": 4.5,
+    "strategy": "CALENDAR",
+    "edge": 0.0875,
+    "category": "geopolitics",
+    "timestamp": "2026-03-23T09:34:45.784612+00:00",
+    "cash_after": 3.0
+  }
+]

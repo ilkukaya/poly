@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "timestamp": "2026-03-23T09:34:45.784982+00:00",
+    "markets_scanned": 187,
+    "signals_found": 42,
+    "actionable_signals": 6,
+    "trades_executed": 6,
+    "equity_before": 30.0,
+    "equity_after": 30.0,
+    "cash_after": 3.0
+  }
+]
