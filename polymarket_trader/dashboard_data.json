@@ -1,0 +1,31 @@
+{
+  "last_updated": "2026-03-23T09:28:47.601484+00:00",
+  "summary": {
+    "equity": 30.0,
+    "cash": 30.0,
+    "initial_capital": 30.0,
+    "total_return_pct": 0.0,
+    "realized_pnl": 0.0,
+    "unrealized_pnl": 0.0,
+    "total_trades": 0,
+    "winning_trades": 0,
+    "losing_trades": 0,
+    "win_rate": 0.0,
+    "fees_paid": 0.0,
+    "peak_equity": 30.0,
+    "max_drawdown_pct": 0.0,
+    "open_positions": 0,
+    "days_active": 1
+  },
+  "positions": [],
+  "equity_curve": [
+    {
+      "timestamp": "2026-03-23T09:28:47.601433+00:00",
+      "equity": 30.0
+    }
+  ],
+  "recent_trades": [],
+  "strategy_stats": {},
+  "category_stats": {},
+  "daily_pnl": {}
+}

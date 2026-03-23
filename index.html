@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Polymarket Paper Trader Dashboard</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0e17; color: #e1e8f0; min-height: 100vh; padding: 20px; }
+  
+  .header { text-align: center; margin-bottom: 30px; }
+  .header h1 { font-size: 24px; color: #fff; margin-bottom: 4px; }
+  .header .subtitle { font-size: 13px; color: #6b7a8d; }
+  .header .updated { font-size: 11px; color: #4a5568; margin-top: 6px; }
+  
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 24px; }
+  .card { background: #141b2a; border-radius: 10px; padding: 16px; border: 1px solid #1e2a3a; }
+  .card .label { font-size: 11px; color: #6b7a8d; text-transform: uppercase; letter-spacing: 0.5px; }
+  .card .value { font-size: 26px; font-weight: 700; margin-top: 4px; }
+  .card .sub { font-size: 12px; color: #6b7a8d; margin-top: 2px; }
+  .green { color: #00d395; }
+  .red { color: #ff4d4d; }
+  .white { color: #fff; }
+  .yellow { color: #ffd700; }
+  
+  .section { background: #141b2a; border-radius: 10px; padding: 20px; border: 1px solid #1e2a3a; margin-bottom: 20px; }
+  .section h2 { font-size: 16px; color: #fff; margin-bottom: 14px; border-bottom: 1px solid #1e2a3a; padding-bottom: 8px; }
+  
+  .pos-row { display: grid; grid-template-columns: 1fr auto auto auto; gap: 10px; padding: 10px 0; border-bottom: 1px solid #0d1420; align-items: center; }
+  .pos-row:last-child { border-bottom: none; }
+  .pos-q { font-size: 13px; color: #c8d4e0; }
+  .pos-side { font-size: 11px; padding: 2px 8px; border-radius: 4px; font-weight: 600; }
+  .pos-side.yes { background: #00d39520; color: #00d395; }
+  .pos-side.no { background: #ff4d4d20; color: #ff4d4d; }
+  .pos-val { font-size: 14px; font-weight: 600; text-align: right; }
+  .pos-meta { font-size: 11px; color: #4a5568; }
+  
+  .trade-row { display: grid; grid-template-columns: auto 1fr auto auto; gap: 10px; padding: 8px 0; border-bottom: 1px solid #0d1420; font-size: 13px; }
+  .trade-action { font-size: 11px; padding: 2px 6px; border-radius: 3px; font-weight: 600; }
+  .trade-action.open { background: #3b82f620; color: #60a5fa; }
+  .trade-action.close { background: #8b5cf620; color: #a78bfa; }
+  
+  .chart-container { height: 200px; position: relative; margin-top: 10px; }
+  .chart-bar { position: absolute; bottom: 0; background: #00d395; border-radius: 3px 3px 0 0; min-width: 4px; transition: height 0.3s; }
+  .chart-bar.negative { background: #ff4d4d; }
+  .chart-line { position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: #1e2a3a; }
+  
+  .strat-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid #0d1420; font-size: 13px; }
+  
+  .empty { text-align: center; color: #4a5568; padding: 20px; font-size: 14px; }
+  
+  .phase-badge { display: inline-block; padding: 3px 10px; border-radius: 12px; font-size: 12px; font-weight: 600; }
+  .phase-1 { background: #ef444420; color: #f87171; }
+  .phase-2 { background: #f59e0b20; color: #fbbf24; }
+  .phase-3 { background: #00d39520; color: #00d395; }
+
+  @media (max-width: 600px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
+    .pos-row { grid-template-columns: 1fr auto; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🐺 Wolf of Polymarket</h1>
+  <div class="subtitle">Paper Trading System — $30 → Growth Machine</div>
+  <div class="updated" id="lastUpdated">Loading...</div>
+</div>
+
+<div class="grid" id="summaryCards"></div>
+
+<div class="section" id="equitySection">
+  <h2>📈 Equity Curve</h2>
+  <div class="chart-container" id="equityChart"></div>
+</div>
+
+<div class="section">
+  <h2>📊 Open Positions</h2>
+  <div id="positions"><div class="empty">Loading...</div></div>
+</div>
+
+<div class="section">
+  <h2>🔄 Recent Trades</h2>
+  <div id="trades"><div class="empty">Loading...</div></div>
+</div>
+
+<div class="section">
+  <h2>🎯 Strategy Performance</h2>
+  <div id="strategies"><div class="empty">Loading...</div></div>
+</div>
+
+<script>
+const DATA_URL = 'polymarket_trader/dashboard_data.json';
+
+async function loadDashboard() {
+  try {
+    const resp = await fetch(DATA_URL + '?t=' + Date.now());
+    const data = await resp.json();
+    render(data);
+  } catch(e) {
+    document.getElementById('lastUpdated').textContent = 'Error loading data: ' + e.message;
+  }
+}
+
+function render(data) {
+  const s = data.summary;
+  
+  // Last updated
+  const updated = new Date(data.last_updated);
+  document.getElementById('lastUpdated').textContent = 
+    `Last scan: ${updated.toLocaleString('tr-TR')} | Day ${s.days_active}`;
+  
+  // Phase
+  let phase = 1, phaseName = 'Survival';
+  if (s.equity >= 500) { phase = 3; phaseName = 'Scale'; }
+  else if (s.equity >= 100) { phase = 2; phaseName = 'Growth'; }
+  
+  // Summary cards
+  const cards = [
+    { label: 'Equity', value: '$' + s.equity.toFixed(2), cls: 'white', sub: `Phase ${phase}: ${phaseName}` },
+    { label: 'Total Return', value: s.total_return_pct.toFixed(1) + '%', cls: s.total_return_pct >= 0 ? 'green' : 'red', sub: `From $${s.initial_capital}` },
+    { label: 'Cash', value: '$' + s.cash.toFixed(2), cls: 'white', sub: `${s.open_positions} open positions` },
+    { label: 'Win Rate', value: s.win_rate.toFixed(0) + '%', cls: s.win_rate >= 50 ? 'green' : 'yellow', sub: `${s.winning_trades}W / ${s.losing_trades}L` },
+    { label: 'Realized P&L', value: '$' + s.realized_pnl.toFixed(2), cls: s.realized_pnl >= 0 ? 'green' : 'red', sub: `Fees: $${s.fees_paid.toFixed(2)}` },
+    { label: 'Max Drawdown', value: s.max_drawdown_pct.toFixed(1) + '%', cls: s.max_drawdown_pct < 10 ? 'green' : 'red', sub: `Peak: $${s.peak_equity.toFixed(2)}` },
+  ];
+  
+  document.getElementById('summaryCards').innerHTML = cards.map(c => `
+    <div class="card">
+      <div class="label">${c.label}</div>
+      <div class="value ${c.cls}">${c.value}</div>
+      <div class="sub">${c.sub}</div>
+    </div>
+  `).join('');
+  
+  // Equity chart
+  if (data.equity_curve && data.equity_curve.length > 1) {
+    const container = document.getElementById('equityChart');
+    const values = data.equity_curve.map(p => p.equity);
+    const min = Math.min(...values) * 0.95;
+    const max = Math.max(...values) * 1.05;
+    const range = max - min || 1;
+    const w = container.offsetWidth;
+    const barW = Math.max(Math.floor(w / values.length) - 2, 3);
+    
+    container.innerHTML = values.map((v, i) => {
+      const h = ((v - min) / range) * 180;
+      const left = (i / values.length) * w;
+      const cls = v >= s.initial_capital ? '' : 'negative';
+      return `<div class="chart-bar ${cls}" style="left:${left}px;height:${h}px;width:${barW}px" title="$${v.toFixed(2)}"></div>`;
+    }).join('') + `<div class="chart-line" style="bottom:${((s.initial_capital - min) / range) * 180}px"></div>`;
+  }
+  
+  // Positions
+  const posDiv = document.getElementById('positions');
+  if (data.positions.length === 0) {
+    posDiv.innerHTML = '<div class="empty">No open positions</div>';
+  } else {
+    posDiv.innerHTML = data.positions.map(p => `
+      <div class="pos-row">
+        <div>
+          <div class="pos-q">${p.question.substring(0, 60)}</div>
+          <div class="pos-meta">${p.strategy} | ${p.category} | Entry: ${p.entry_price.toFixed(3)}</div>
+        </div>
+        <span class="pos-side ${p.side.toLowerCase()}">${p.side}</span>
+        <div class="pos-val ${p.pnl >= 0 ? 'green' : 'red'}">$${p.value.toFixed(2)}<br><small>${p.pnl >= 0 ? '+' : ''}${p.pnl_pct.toFixed(1)}%</small></div>
+      </div>
+    `).join('');
+  }
+  
+  // Recent trades
+  const trDiv = document.getElementById('trades');
+  if (data.recent_trades.length === 0) {
+    trDiv.innerHTML = '<div class="empty">No trades yet</div>';
+  } else {
+    trDiv.innerHTML = data.recent_trades.slice().reverse().map(t => {
+      const action = t.action.toLowerCase();
+      const pnl = t.pnl ? `${t.pnl >= 0 ? '+' : ''}$${t.pnl.toFixed(2)}` : '';
+      const time = new Date(t.timestamp).toLocaleDateString('tr-TR');
+      return `
+        <div class="trade-row">
+          <span class="trade-action ${action}">${t.action}</span>
+          <span>${(t.question || '').substring(0, 50)} <small style="color:#4a5568">${t.side}</small></span>
+          <span style="color:#6b7a8d">${time}</span>
+          <span class="${(t.pnl||0) >= 0 ? 'green' : 'red'}">${pnl}</span>
+        </div>
+      `;
+    }).join('');
+  }
+  
+  // Strategy stats
+  const stDiv = document.getElementById('strategies');
+  const strats = Object.entries(data.strategy_stats);
+  if (strats.length === 0) {
+    stDiv.innerHTML = '<div class="empty">No completed trades yet</div>';
+  } else {
+    stDiv.innerHTML = strats.map(([name, s]) => {
+      const wr = s.trades > 0 ? (s.wins / s.trades * 100).toFixed(0) : 0;
+      return `
+        <div class="strat-row">
+          <span>${name}</span>
+          <span>${s.wins}W/${s.losses}L (${wr}%)</span>
+          <span class="${s.total_pnl >= 0 ? 'green' : 'red'}">$${s.total_pnl.toFixed(2)}</span>
+        </div>
+      `;
+    }).join('');
+  }
+}
+
+loadDashboard();
+// Auto-refresh every 5 minutes
+setInterval(loadDashboard, 5 * 60 * 1000);
+</script>
+</body>
+</html>
