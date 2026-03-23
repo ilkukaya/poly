@@ -1,0 +1,121 @@
+[CHECK] All 6 positions stable.
+
+======================================================================
+POLYMARKET SCANNER - 2026-03-23 10:40 UTC
+======================================================================
+
+Phase 1: Survival | Equity: $29.97 | Cash: $3.00
+Open positions: 6/6
+
+Fetching active markets...
+Found 198 tradeable markets
+Categories: {'other': 68, 'sports': 42, 'geopolitics': 31, 'politics': 24, 'crypto': 23, 'esports': 6, 'finance': 2, 'entertainment': 2}
+[STOP LOSS] Triggered for 1627647
+[TRADE] CLOSE NO | Bucks vs. Clippers
+        Entry: 0.869 → Exit: 0.134
+        P&L: $-3.80 (-84.5%) | Reason: stop_loss
+        Cash: $3.70
+[STOP LOSS] Triggered for 1627630
+[TRADE] CLOSE NO | Pacers vs. Magic
+        Entry: 0.879 → Exit: 0.124
+        P&L: $-3.86 (-85.9%) | Reason: stop_loss
+        Cash: $4.33
+[STOP LOSS] Triggered for 1627600
+[TRADE] CLOSE NO | Grizzlies vs. Hawks
+        Entry: 0.879 → Exit: 0.124
+        P&L: $-3.86 (-85.9%) | Reason: stop_loss
+        Cash: $4.97
+[STOP LOSS] Triggered for 1627644
+[TRADE] CLOSE NO | Nets vs. Trail Blazers
+        Entry: 0.910 → Exit: 0.095
+        P&L: $-4.03 (-89.6%) | Reason: stop_loss
+        Cash: $5.44
+[STOP LOSS] Triggered for 1581306
+[TRADE] CLOSE NO | Kharg Island no longer under Iranian control by March 31?
+        Entry: 0.879 → Exit: 0.114
+        P&L: $-3.91 (-87.0%) | Reason: stop_loss
+        Cash: $6.02
+
+Running strategies...
+Raw signals found: 43
+Actionable signals: 5
+
+──────────────────────────────────────────────────────────────────────
+TOP SIGNALS:
+──────────────────────────────────────────────────────────────────────
+
+  #1 [PENNY_PICK] Raptors vs. Jazz
+      YES @ 0.865 | Edge: 8.1% | Conf: 68% | Score: 0.1105
+      Category: other | Liq: $126,762 | Vol24h: $48,315
+      Suggested size: $1.58
+      Near-resolved YES at 0.865. Est. edge 8.1% (gap: 13.5%). 0.6d left.
+
+  #2 [PENNY_PICK] Will the price of Ethereum be above $2,000 on March 23?
+      YES @ 0.850 | Edge: 9.0% | Conf: 65% | Score: 0.0646
+      Category: crypto | Liq: $9,829 | Vol24h: $55,453
+      Suggested size: $1.58
+      Near-resolved YES at 0.850. Est. edge 9.0% (gap: 15.0%). 0.1d left.
+
+  #3 [PENNY_PICK] Will Elon Musk post 115-139 tweets from March 21 to March 23
+      NO @ 0.865 | Edge: 8.1% | Conf: 71% | Score: 0.0628
+      Category: other | Liq: $9,713 | Vol24h: $148,897
+      Suggested size: $1.58
+      Near-resolved NO at 0.865. Est. edge 8.1% (gap: 13.5%). 0.1d left.
+
+  #4 [PENNY_PICK] Will the price of Bitcoin be above $70,000 on March 23?
+      NO @ 0.895 | Edge: 6.3% | Conf: 73% | Score: 0.0564
+      Category: crypto | Liq: $23,058 | Vol24h: $230,145
+      Suggested size: $1.58
+      Near-resolved NO at 0.895. Est. edge 6.3% (gap: 10.5%). 0.1d left.
+
+  #5 [CALENDAR] Trump announces end of military operations against Iran by M
+      NO @ 0.895 | Edge: 7.3% | Conf: 74% | Score: 0.0540
+      Category: geopolitics | Liq: $108,072 | Vol24h: $248,854
+      Suggested size: $1.58
+      Time decay play. YES at 0.105 with 7d left. Collect ~10.5¢ if nothing happens.
+
+──────────────────────────────────────────────────────────────────────
+EXECUTING TRADES:
+──────────────────────────────────────────────────────────────────────
+[TRADE] OPEN YES | Raptors vs. Jazz
+        Price: 0.869 | Shares: 1.8 | Cost: $1.58
+        Strategy: PENNY_PICK | Edge: 8.1% | Cash left: $4.44
+[TRADE] OPEN YES | Will the price of Ethereum be above $2,000 on March 23?
+        Price: 0.854 | Shares: 1.8 | Cost: $1.58
+        Strategy: PENNY_PICK | Edge: 9.0% | Cash left: $2.86
+[TRADE] OPEN NO | Will Elon Musk post 115-139 tweets from March 21 to March 23
+        Price: 0.869 | Shares: 1.8 | Cost: $1.58
+        Strategy: PENNY_PICK | Edge: 8.1% | Cash left: $1.28
+
+  [SKIP] Insufficient cash for Will the price of Bitcoin be above $70,0
+
+  [SKIP] Insufficient cash for Trump announces end of military operatio
+======================================================================
+POLYMARKET PAPER TRADING - PORTFOLIO SUMMARY
+======================================================================
+Phase: 1 - Survival (Conservative. Penny picking + high-conviction valu)
+Cash:           $      1.28
+Positions:               4
+
+  Open Positions:
+  🟢 Thunder vs. 76ers
+     YES @ 0.910 → 0.915 | $4.53 (+0.6%) | PENNY_PICK
+  🟢 Raptors vs. Jazz
+     YES @ 0.869 → 0.869 | $1.58 (+0.0%) | PENNY_PICK
+  🟢 Will the price of Ethereum be above $2,000 on Marc
+     YES @ 0.854 → 0.854 | $1.58 (+0.0%) | PENNY_PICK
+  🟢 Will Elon Musk post 115-139 tweets from March 21 t
+     NO @ 0.869 → 0.869 | $1.58 (+0.0%) | PENNY_PICK
+
+Equity:         $     10.55
+Unrealized P&L: $     +0.03
+Realized P&L:   $    -19.48
+Total P&L:      $    -19.45
+Return:             -64.8%
+Fees Paid:      $      0.00
+Win Rate:       0/5 (0%)
+Max Drawdown:        63.3%
+Peak Equity:    $     30.00
+======================================================================
+[DASHBOARD] Exported to /home/runner/work/poly/poly/polymarket_trader/dashboard_data.json
+[DASHBOARD] Equity: $10.55 | Return: -64.8%
