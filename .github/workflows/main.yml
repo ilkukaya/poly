@@ -1,0 +1,88 @@
+name: Polymarket Paper Trader
+
+on:
+  schedule:
+    - cron: '*/15 17,18,19,20,21,22,23 * * *'
+    - cron: '*/15 0,1,2 * * *'
+    - cron: '0,30 7,8,9,10,11,12,13,14,15,16 * * *'
+    - cron: '0 3,4,5,6 * * *'
+  
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Run mode'
+        required: true
+        default: 'scan'
+        type: choice
+        options:
+          - scan
+          - check
+          - status
+          - dry
+
+jobs:
+  trade:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: pip install requests pandas
+
+      - name: Check resolutions first
+        run: |
+          cd polymarket_trader
+          python3 scanner.py check 2>&1 | tee -a run.log
+
+      - name: Run scanner
+        run: |
+          cd polymarket_trader
+          MODE=${{ github.event.inputs.mode || 'scan' }}
+          python3 scanner.py $MODE 2>&1 | tee -a run.log
+
+      - name: Generate dashboard
+        run: |
+          cd polymarket_trader
+          python3 dashboard_export.py 2>&1 | tee -a run.log
+
+      - name: Save run log
+        run: |
+          mkdir -p logs
+          LOGFILE="logs/run_$(date -u +%Y%m%d_%H%M).log"
+          cp polymarket_trader/run.log "$LOGFILE" 2>/dev/null || true
+          rm -f polymarket_trader/run.log
+          cd logs
+          ls -t run_*.log 2>/dev/null | tail -n +201 | xargs rm -f 2>/dev/null || true
+
+      - name: Commit results
+        run: |
+          git config --local user.email "polybot@paper.trade"
+          git config --local user.name "PolyBot"
+          
+          git add polymarket_trader/portfolio.json
+          git add polymarket_trader/trade_log.json
+          git add polymarket_trader/scan_log.json
+          git add polymarket_trader/dashboard_data.json
+          git add logs/ || true
+          
+          EQUITY=$(python3 -c "
+          import json
+          p=json.load(open('polymarket_trader/portfolio.json'))
+          eq = p['cash'] + sum(pos['shares']*pos.get('current_price', pos['entry_price']) for pos in p['positions'].values())
+          wins = p.get('winning_trades',0)
+          losses = p.get('losing_trades',0)
+          positions = len(p['positions'])
+          print(f'\${eq:.2f} | {positions} pos | {wins}W-{losses}L')
+          ")
+          
+          git diff --cached --quiet || git commit -m "📊 $(date -u +'%Y-%m-%d %H:%M') UTC | $EQUITY"
+          git push
