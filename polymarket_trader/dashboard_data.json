@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-03-23T17:48:37.262323+00:00",
+  "last_updated": "2026-03-23T18:45:52.280042+00:00",
   "summary": {
-    "equity": 6.59,
+    "equity": 6.54,
     "cash": 0.56,
     "initial_capital": 30.0,
-    "total_return_pct": -78.02,
+    "total_return_pct": -78.2,
     "realized_pnl": -23.36,
-    "unrealized_pnl": -0.05,
+    "unrealized_pnl": -0.1,
     "total_trades": 24,
     "winning_trades": 2,
     "losing_trades": 9,
@@ -37,11 +37,11 @@
       "question": "Raptors vs. Jazz",
       "side": "YES",
       "entry_price": 0.8693,
-      "current_price": 0.855,
+      "current_price": 0.825,
       "cost": 1.58,
-      "value": 1.55,
-      "pnl": -0.03,
-      "pnl_pct": -1.6,
+      "value": 1.5,
+      "pnl": -0.08,
+      "pnl_pct": -5.1,
       "strategy": "PENNY_PICK",
       "category": "other",
       "opened_at": "2026-03-23T10:40:40.512628+00:00"
@@ -81,8 +81,12 @@
       "equity": 6.59
     },
     {
-      "timestamp": "2026-03-23T17:48:37.262298+00:00",
-      "equity": 6.59
+      "timestamp": "2026-03-23T18:45:52.223302+00:00",
+      "equity": 6.54
+    },
+    {
+      "timestamp": "2026-03-23T18:45:52.280017+00:00",
+      "equity": 6.54
     }
   ],
   "recent_trades": [
