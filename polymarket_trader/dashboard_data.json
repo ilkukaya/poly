@@ -1,20 +1,20 @@
 {
-  "last_updated": "2026-03-23T14:05:13.408035+00:00",
+  "last_updated": "2026-03-23T15:31:48.706853+00:00",
   "summary": {
-    "equity": 7.57,
-    "cash": 0.45,
+    "equity": 6.55,
+    "cash": 0.56,
     "initial_capital": 30.0,
-    "total_return_pct": -74.78,
-    "realized_pnl": -22.34,
+    "total_return_pct": -78.18,
+    "realized_pnl": -23.36,
     "unrealized_pnl": -0.1,
-    "total_trades": 23,
+    "total_trades": 24,
     "winning_trades": 2,
-    "losing_trades": 8,
-    "win_rate": 20.0,
+    "losing_trades": 9,
+    "win_rate": 18.2,
     "fees_paid": 0.0,
     "peak_equity": 30.0,
-    "max_drawdown_pct": 73.54,
-    "open_positions": 3,
+    "max_drawdown_pct": 77.81,
+    "open_positions": 2,
     "days_active": 1
   },
   "positions": [
@@ -45,20 +45,6 @@
       "strategy": "PENNY_PICK",
       "category": "other",
       "opened_at": "2026-03-23T10:40:40.512628+00:00"
-    },
-    {
-      "market_id": "1628640",
-      "question": "Will the price of Bitcoin be above $74,000 on March 24?",
-      "side": "NO",
-      "entry_price": 0.8749,
-      "current_price": 0.8749,
-      "cost": 1.13,
-      "value": 1.13,
-      "pnl": 0.0,
-      "pnl_pct": 0.0,
-      "strategy": "PENNY_PICK",
-      "category": "crypto",
-      "opened_at": "2026-03-23T14:05:13.348933+00:00"
     }
   ],
   "equity_curve": [
@@ -83,25 +69,15 @@
       "equity": 7.57
     },
     {
-      "timestamp": "2026-03-23T14:05:13.408007+00:00",
-      "equity": 7.57
+      "timestamp": "2026-03-23T15:31:48.652976+00:00",
+      "equity": 6.55
+    },
+    {
+      "timestamp": "2026-03-23T15:31:48.706828+00:00",
+      "equity": 6.55
     }
   ],
   "recent_trades": [
-    {
-      "action": "OPEN",
-      "market_id": "1627632",
-      "question": "Thunder vs. 76ers",
-      "side": "YES",
-      "price": 0.9095249999999999,
-      "shares": 4.947637503092274,
-      "amount_usd": 4.5,
-      "strategy": "PENNY_PICK",
-      "edge": 0.05699999999999998,
-      "category": "other",
-      "timestamp": "2026-03-23T09:34:45.783798+00:00",
-      "cash_after": 12.0
-    },
     {
       "action": "OPEN",
       "market_id": "1627644",
@@ -417,14 +393,33 @@
       "category": "crypto",
       "timestamp": "2026-03-23T14:05:13.348942+00:00",
       "cash_after": 0.45348424525354436
+    },
+    {
+      "action": "CLOSE",
+      "market_id": "1628640",
+      "question": "Will the price of Bitcoin be above $74,000 on March 24?",
+      "side": "NO",
+      "entry_price": 0.8748524999999999,
+      "exit_price": 0.08507250000000001,
+      "shares": 1.2916463060915984,
+      "cost_basis": 1.13,
+      "proceeds": 0.10988358037497752,
+      "pnl": -1.0201164196250223,
+      "pnl_pct": -90.27578934734711,
+      "reason": "stop_loss",
+      "strategy": "PENNY_PICK",
+      "category": "crypto",
+      "hold_time": "2026-03-23T14:05:13.348933+00:00",
+      "timestamp": "2026-03-23T15:31:48.648247+00:00",
+      "cash_after": 0.5633678256285218
     }
   ],
   "strategy_stats": {
     "PENNY_PICK": {
       "wins": 2,
-      "losses": 7,
-      "total_pnl": -18.422059464767777,
-      "trades": 9
+      "losses": 8,
+      "total_pnl": -19.4421758843928,
+      "trades": 10
     },
     "CALENDAR": {
       "wins": 0,
@@ -451,11 +446,11 @@
     },
     "crypto": {
       "wins": 2,
-      "losses": 1,
-      "total_pnl": -0.49108179861410073
+      "losses": 2,
+      "total_pnl": -1.511198218239123
     }
   },
   "daily_pnl": {
-    "2026-03-23": -22.336515754746458
+    "2026-03-23": -23.35663217437148
   }
 }

@@ -1,0 +1,46 @@
+[CHECK] All 3 positions stable.
+
+======================================================================
+POLYMARKET SCANNER - 2026-03-23 15:31 UTC
+======================================================================
+
+Phase 1: Survival | Equity: $7.62 | Cash: $0.45
+Open positions: 3/6
+
+Fetching active markets...
+Found 197 tradeable markets
+Categories: {'other': 67, 'sports': 47, 'geopolitics': 37, 'politics': 21, 'crypto': 15, 'esports': 7, 'finance': 2, 'entertainment': 1}
+[STOP LOSS] Triggered for 1628640
+[TRADE] CLOSE NO | Will the price of Bitcoin be above $74,000 on March 24?
+        Entry: 0.875 → Exit: 0.085
+        P&L: $-1.02 (-90.3%) | Reason: stop_loss
+        Cash: $0.56
+
+Running strategies...
+Raw signals found: 46
+Actionable signals: 0
+======================================================================
+POLYMARKET PAPER TRADING - PORTFOLIO SUMMARY
+======================================================================
+Phase: 1 - Survival (Conservative. Penny picking + high-conviction valu)
+Cash:           $      0.56
+Positions:               2
+
+  Open Positions:
+  🔴 Thunder vs. 76ers
+     YES @ 0.910 → 0.895 | $4.43 (-1.6%) | PENNY_PICK
+  🔴 Raptors vs. Jazz
+     YES @ 0.869 → 0.855 | $1.55 (-1.6%) | PENNY_PICK
+
+Equity:         $      6.55
+Unrealized P&L: $     -0.10
+Realized P&L:   $    -23.36
+Total P&L:      $    -23.45
+Return:             -78.2%
+Fees Paid:      $      0.00
+Win Rate:       2/11 (18%)
+Max Drawdown:        77.8%
+Peak Equity:    $     30.00
+======================================================================
+[DASHBOARD] Exported to /home/runner/work/poly/poly/polymarket_trader/dashboard_data.json
+[DASHBOARD] Equity: $6.55 | Return: -78.2%
