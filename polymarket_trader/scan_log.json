@@ -138,5 +138,15 @@
     "equity_before": 6.553545319343482,
     "equity_after": 6.553545319343482,
     "cash_after": 0.5633678256285218
+  },
+  {
+    "timestamp": "2026-03-23T23:00:07.718933+00:00",
+    "markets_scanned": 223,
+    "signals_found": 47,
+    "actionable_signals": 0,
+    "trades_executed": 0,
+    "equity_before": 6.553545319343482,
+    "equity_after": 6.553545319343482,
+    "cash_after": 0.5633678256285218
   }
 ]
