@@ -8,7 +8,7 @@
       "question": "Thunder vs. 76ers",
       "side": "YES",
       "entry_price": 0.9095249999999999,
-      "current_price": 0.895,
+      "current_price": 0.905,
       "shares": 4.947637503092274,
       "cost_basis": 4.5,
       "category": "other",
@@ -25,7 +25,7 @@
       "question": "Raptors vs. Jazz",
       "side": "YES",
       "entry_price": 0.8693249999999999,
-      "current_price": 0.855,
+      "current_price": 0.865,
       "shares": 1.817502084950968,
       "cost_basis": 1.58,
       "category": "other",
@@ -61,5 +61,5 @@
   "daily_pnl": {
     "2026-03-23": -23.35663217437148
   },
-  "last_updated": "2026-03-23T15:31:48.648271+00:00"
+  "last_updated": "2026-03-23T16:42:06.729786+00:00"
 }
