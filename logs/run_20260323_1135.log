@@ -1,0 +1,99 @@
+[TAKE PROFIT] Will the price of Ethereum be above $2,000 on Marc — 0.854 → 0.968 (13.3%)
+[TRADE] CLOSE YES | Will the price of Ethereum be above $2,000 on March 23?
+        Entry: 0.854 → Exit: 0.963
+        P&L: $+0.20 (+12.7%) | Reason: take_profit
+        Cash: $3.06
+
+[CHECK] Actions taken: 1
+  → take_profit: 1607587
+
+======================================================================
+POLYMARKET SCANNER - 2026-03-23 11:35 UTC
+======================================================================
+
+Phase 1: Survival | Equity: $10.61 | Cash: $3.06
+Open positions: 3/6
+
+Fetching active markets...
+Found 209 tradeable markets
+Categories: {'other': 72, 'sports': 43, 'geopolitics': 33, 'crypto': 30, 'politics': 22, 'esports': 5, 'finance': 2, 'entertainment': 2}
+[STOP LOSS] Triggered for 1652002
+[TRADE] CLOSE NO | Will Elon Musk post 115-139 tweets from March 21 to March 23
+        Entry: 0.869 → Exit: 0.174
+        P&L: $-1.26 (-80.0%) | Reason: stop_loss
+        Cash: $3.38
+
+Running strategies...
+Raw signals found: 54
+Actionable signals: 4
+
+──────────────────────────────────────────────────────────────────────
+TOP SIGNALS:
+──────────────────────────────────────────────────────────────────────
+
+  #1 [PENNY_PICK] Will Elon Musk post 360-379 tweets from March 17 to March 24
+      NO @ 0.865 | Edge: 8.1% | Conf: 70% | Score: 0.0774
+      Category: other | Liq: $35,756 | Vol24h: $136,202
+      Suggested size: $1.41
+      Near-resolved NO at 0.865. Est. edge 8.1% (gap: 13.5%). 0.5d left.
+
+  #2 [PENNY_PICK] Bitcoin Up or Down - March 23, 7:30AM-7:35AM ET
+      YES @ 0.865 | Edge: 8.1% | Conf: 68% | Score: 0.0695
+      Category: crypto | Liq: $25,570 | Vol24h: $53,014
+      Suggested size: $1.41
+      Near-resolved YES at 0.865. Est. edge 8.1% (gap: 13.5%). 0.1d left.
+
+  #3 [PENNY_PICK] Will the price of Ethereum be above $2,100 on March 23?
+      YES @ 0.865 | Edge: 8.1% | Conf: 63% | Score: 0.0598
+      Category: crypto | Liq: $17,246 | Vol24h: $77,224
+      Suggested size: $1.41
+      Near-resolved YES at 0.865. Est. edge 8.1% (gap: 13.5%). 0.1d left.
+
+  #4 [PENNY_PICK] Will the price of Bitcoin be above $74,000 on March 24?
+      NO @ 0.902 | Edge: 5.9% | Conf: 70% | Score: 0.0507
+      Category: crypto | Liq: $23,264 | Vol24h: $48,103
+      Suggested size: $1.41
+      Near-resolved NO at 0.902. Est. edge 5.9% (gap: 9.8%). 0.5d left.
+
+──────────────────────────────────────────────────────────────────────
+EXECUTING TRADES:
+──────────────────────────────────────────────────────────────────────
+[TRADE] OPEN NO | Will Elon Musk post 360-379 tweets from March 17 to March 24
+        Price: 0.869 | Shares: 1.6 | Cost: $1.41
+        Strategy: PENNY_PICK | Edge: 8.1% | Cash left: $1.97
+[TRADE] OPEN YES | Bitcoin Up or Down - March 23, 7:30AM-7:35AM ET
+        Price: 0.869 | Shares: 1.6 | Cost: $1.41
+        Strategy: PENNY_PICK | Edge: 8.1% | Cash left: $0.56
+
+  [SKIP] Insufficient cash for Will the price of Ethereum be above $2,1
+
+  [SKIP] Insufficient cash for Will the price of Bitcoin be above $74,0
+======================================================================
+POLYMARKET PAPER TRADING - PORTFOLIO SUMMARY
+======================================================================
+Phase: 1 - Survival (Conservative. Penny picking + high-conviction valu)
+Cash:           $      0.56
+Positions:               4
+
+  Open Positions:
+  🔴 Thunder vs. 76ers
+     YES @ 0.910 → 0.905 | $4.48 (-0.5%) | PENNY_PICK
+  🔴 Raptors vs. Jazz
+     YES @ 0.869 → 0.865 | $1.57 (-0.5%) | PENNY_PICK
+  🟢 Will Elon Musk post 360-379 tweets from March 17 t
+     NO @ 0.869 → 0.869 | $1.41 (+0.0%) | PENNY_PICK
+  🟢 Bitcoin Up or Down - March 23, 7:30AM-7:35AM ET
+     YES @ 0.869 → 0.869 | $1.41 (+0.0%) | PENNY_PICK
+
+Equity:         $      9.43
+Unrealized P&L: $     -0.03
+Realized P&L:   $    -20.54
+Total P&L:      $    -20.57
+Return:             -68.6%
+Fees Paid:      $      0.00
+Win Rate:       1/7 (14%)
+Max Drawdown:        67.5%
+Peak Equity:    $     30.00
+======================================================================
+[DASHBOARD] Exported to /home/runner/work/poly/poly/polymarket_trader/dashboard_data.json
+[DASHBOARD] Equity: $9.43 | Return: -68.6%
