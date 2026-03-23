@@ -8,7 +8,7 @@
       "question": "Thunder vs. 76ers",
       "side": "YES",
       "entry_price": 0.9095249999999999,
-      "current_price": 0.905,
+      "current_price": 0.915,
       "shares": 4.947637503092274,
       "cost_basis": 4.5,
       "category": "other",
@@ -61,5 +61,5 @@
   "daily_pnl": {
     "2026-03-23": -23.35663217437148
   },
-  "last_updated": "2026-03-23T21:01:03.734385+00:00"
+  "last_updated": "2026-03-23T21:50:08.653150+00:00"
 }

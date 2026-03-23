@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-03-23T21:01:04.145967+00:00",
+  "last_updated": "2026-03-23T21:50:09.079277+00:00",
   "summary": {
-    "equity": 6.5,
+    "equity": 6.55,
     "cash": 0.56,
     "initial_capital": 30.0,
-    "total_return_pct": -78.32,
+    "total_return_pct": -78.15,
     "realized_pnl": -23.36,
-    "unrealized_pnl": -0.14,
+    "unrealized_pnl": -0.09,
     "total_trades": 24,
     "winning_trades": 2,
     "losing_trades": 9,
@@ -23,11 +23,11 @@
       "question": "Thunder vs. 76ers",
       "side": "YES",
       "entry_price": 0.9095,
-      "current_price": 0.905,
+      "current_price": 0.915,
       "cost": 4.5,
-      "value": 4.48,
-      "pnl": -0.02,
-      "pnl_pct": -0.5,
+      "value": 4.53,
+      "pnl": 0.03,
+      "pnl_pct": 0.6,
       "strategy": "PENNY_PICK",
       "category": "other",
       "opened_at": "2026-03-23T09:34:45.783792+00:00"
@@ -97,8 +97,12 @@
       "equity": 6.5
     },
     {
-      "timestamp": "2026-03-23T21:01:04.145943+00:00",
-      "equity": 6.5
+      "timestamp": "2026-03-23T21:50:09.024137+00:00",
+      "equity": 6.55
+    },
+    {
+      "timestamp": "2026-03-23T21:50:09.079254+00:00",
+      "equity": 6.55
     }
   ],
   "recent_trades": [
