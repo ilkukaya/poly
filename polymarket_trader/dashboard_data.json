@@ -1,20 +1,20 @@
 {
-  "last_updated": "2026-03-23T11:35:14.664295+00:00",
+  "last_updated": "2026-03-23T12:35:34.014395+00:00",
   "summary": {
-    "equity": 9.43,
-    "cash": 0.56,
+    "equity": 8.47,
+    "cash": 1.21,
     "initial_capital": 30.0,
-    "total_return_pct": -68.57,
-    "realized_pnl": -20.54,
-    "unrealized_pnl": -0.03,
-    "total_trades": 18,
-    "winning_trades": 1,
-    "losing_trades": 6,
-    "win_rate": 14.3,
+    "total_return_pct": -71.78,
+    "realized_pnl": -21.44,
+    "unrealized_pnl": -0.1,
+    "total_trades": 21,
+    "winning_trades": 2,
+    "losing_trades": 7,
+    "win_rate": 22.2,
     "fees_paid": 0.0,
     "peak_equity": 30.0,
-    "max_drawdown_pct": 67.51,
-    "open_positions": 4,
+    "max_drawdown_pct": 70.75,
+    "open_positions": 3,
     "days_active": 1
   },
   "positions": [
@@ -23,11 +23,11 @@
       "question": "Thunder vs. 76ers",
       "side": "YES",
       "entry_price": 0.9095,
-      "current_price": 0.905,
+      "current_price": 0.895,
       "cost": 4.5,
-      "value": 4.48,
-      "pnl": -0.02,
-      "pnl_pct": -0.5,
+      "value": 4.43,
+      "pnl": -0.07,
+      "pnl_pct": -1.6,
       "strategy": "PENNY_PICK",
       "category": "other",
       "opened_at": "2026-03-23T09:34:45.783792+00:00"
@@ -37,42 +37,28 @@
       "question": "Raptors vs. Jazz",
       "side": "YES",
       "entry_price": 0.8693,
-      "current_price": 0.865,
+      "current_price": 0.855,
       "cost": 1.58,
-      "value": 1.57,
-      "pnl": -0.01,
-      "pnl_pct": -0.5,
+      "value": 1.55,
+      "pnl": -0.03,
+      "pnl_pct": -1.6,
       "strategy": "PENNY_PICK",
       "category": "other",
       "opened_at": "2026-03-23T10:40:40.512628+00:00"
     },
     {
-      "market_id": "1542957",
-      "question": "Will Elon Musk post 360-379 tweets from March 17 to March 24, 2026?",
+      "market_id": "1607684",
+      "question": "Will the price of Bitcoin be above $72,000 on March 23?",
       "side": "NO",
-      "entry_price": 0.8693,
-      "current_price": 0.8693,
-      "cost": 1.41,
-      "value": 1.41,
-      "pnl": 0.0,
-      "pnl_pct": 0.0,
-      "strategy": "PENNY_PICK",
-      "category": "other",
-      "opened_at": "2026-03-23T11:35:14.608987+00:00"
-    },
-    {
-      "market_id": "1681592",
-      "question": "Bitcoin Up or Down - March 23, 7:30AM-7:35AM ET",
-      "side": "YES",
-      "entry_price": 0.8693,
-      "current_price": 0.8693,
-      "cost": 1.41,
-      "value": 1.41,
+      "entry_price": 0.909,
+      "current_price": 0.909,
+      "cost": 1.27,
+      "value": 1.27,
       "pnl": 0.0,
       "pnl_pct": 0.0,
       "strategy": "PENNY_PICK",
       "category": "crypto",
-      "opened_at": "2026-03-23T11:35:14.609552+00:00"
+      "opened_at": "2026-03-23T12:35:33.958353+00:00"
     }
   ],
   "equity_curve": [
@@ -89,25 +75,15 @@
       "equity": 9.43
     },
     {
-      "timestamp": "2026-03-23T11:35:14.664271+00:00",
-      "equity": 9.43
+      "timestamp": "2026-03-23T12:35:33.959006+00:00",
+      "equity": 8.47
+    },
+    {
+      "timestamp": "2026-03-23T12:35:34.014371+00:00",
+      "equity": 8.47
     }
   ],
   "recent_trades": [
-    {
-      "action": "OPEN",
-      "market_id": "1627647",
-      "question": "Bucks vs. Clippers",
-      "side": "NO",
-      "price": 0.8693249999999999,
-      "shares": 5.1764299887844025,
-      "amount_usd": 4.5,
-      "strategy": "PENNY_PICK",
-      "edge": 0.081,
-      "category": "other",
-      "timestamp": "2026-03-23T09:34:45.782841+00:00",
-      "cash_after": 25.5
-    },
     {
       "action": "OPEN",
       "market_id": "1627630",
@@ -380,14 +356,66 @@
       "category": "crypto",
       "timestamp": "2026-03-23T11:35:14.609560+00:00",
       "cash_after": 0.5593740466960737
+    },
+    {
+      "action": "CLOSE",
+      "market_id": "1681592",
+      "question": "Bitcoin Up or Down - March 23, 7:30AM-7:35AM ET",
+      "side": "YES",
+      "entry_price": 0.8693249999999999,
+      "exit_price": 1.0,
+      "shares": 1.6219480631524459,
+      "cost_basis": 1.41,
+      "proceeds": 1.617709101889397,
+      "pnl": 0.20770910188939704,
+      "pnl_pct": 14.73114197797142,
+      "reason": "resolved_win",
+      "strategy": "PENNY_PICK",
+      "category": "crypto",
+      "hold_time": "2026-03-23T11:35:14.609552+00:00",
+      "timestamp": "2026-03-23T12:35:33.601165+00:00",
+      "cash_after": 2.1770831485854707
+    },
+    {
+      "action": "CLOSE",
+      "market_id": "1542957",
+      "question": "Will Elon Musk post 360-379 tweets from March 17 to March 24, 2026?",
+      "side": "NO",
+      "entry_price": 0.8693249999999999,
+      "exit_price": 0.18905,
+      "shares": 1.6219480631524459,
+      "cost_basis": 1.41,
+      "proceeds": 0.3066292813389699,
+      "pnl": -1.10337071866103,
+      "pnl_pct": -78.25324245822908,
+      "reason": "stop_loss",
+      "strategy": "PENNY_PICK",
+      "category": "other",
+      "hold_time": "2026-03-23T11:35:14.608987+00:00",
+      "timestamp": "2026-03-23T12:35:33.953353+00:00",
+      "cash_after": 2.4837124299244406
+    },
+    {
+      "action": "OPEN",
+      "market_id": "1607684",
+      "question": "Will the price of Bitcoin be above $72,000 on March 23?",
+      "side": "NO",
+      "price": 0.9090224999999998,
+      "shares": 1.3971051321611954,
+      "amount_usd": 1.27,
+      "strategy": "PENNY_PICK",
+      "edge": 0.05730000000000002,
+      "category": "crypto",
+      "timestamp": "2026-03-23T12:35:33.958359+00:00",
+      "cash_after": 1.2137124299244406
     }
   ],
   "strategy_stats": {
     "PENNY_PICK": {
-      "wins": 1,
-      "losses": 5,
-      "total_pnl": -16.626169663325246,
-      "trades": 6
+      "wins": 2,
+      "losses": 6,
+      "total_pnl": -17.52183128009688,
+      "trades": 8
     },
     "CALENDAR": {
       "wins": 0,
@@ -399,8 +427,8 @@
   "category_stats": {
     "other": {
       "wins": 0,
-      "losses": 4,
-      "total_pnl": -12.795282382472443
+      "losses": 5,
+      "total_pnl": -13.898653101133473
     },
     "sports": {
       "wins": 0,
@@ -413,12 +441,12 @@
       "total_pnl": -3.914456289978678
     },
     "crypto": {
-      "wins": 1,
+      "wins": 2,
       "losses": 0,
-      "total_pnl": 0.2014372841673986
+      "total_pnl": 0.40914638605679565
     }
   },
   "daily_pnl": {
-    "2026-03-23": -20.540625953303927
+    "2026-03-23": -21.43628757007556
   }
 }
