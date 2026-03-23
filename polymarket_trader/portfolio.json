@@ -1,7 +1,7 @@
 {
   "created_at": "2026-03-23T12:00:00+00:00",
   "initial_capital": 30.0,
-  "cash": 1.2137124299244406,
+  "cash": 0.45348424525354436,
   "positions": {
     "1627632": {
       "market_id": "1627632",
@@ -37,21 +37,21 @@
       "stop_loss": 0.43466249999999995,
       "status": "open"
     },
-    "1607684": {
-      "market_id": "1607684",
-      "question": "Will the price of Bitcoin be above $72,000 on March 23?",
+    "1628640": {
+      "market_id": "1628640",
+      "question": "Will the price of Bitcoin be above $74,000 on March 24?",
       "side": "NO",
-      "entry_price": 0.9090224999999998,
-      "current_price": 0.9090224999999998,
-      "shares": 1.3971051321611954,
-      "cost_basis": 1.27,
+      "entry_price": 0.8748524999999999,
+      "current_price": 0.8748524999999999,
+      "shares": 1.2916463060915984,
+      "cost_basis": 1.13,
       "category": "crypto",
       "strategy": "PENNY_PICK",
-      "edge_at_entry": 0.05730000000000002,
-      "confidence": 0.79295744552475,
-      "notes": "Near-resolved NO at 0.904. Est. edge 5.7% (gap: 9.6%). 0.1d left.",
-      "opened_at": "2026-03-23T12:35:33.958353+00:00",
-      "stop_loss": 0.4545112499999999,
+      "edge_at_entry": 0.07769999999999996,
+      "confidence": 0.680487260066,
+      "notes": "Near-resolved NO at 0.871. Est. edge 7.8% (gap: 12.9%). 0.4d left.",
+      "opened_at": "2026-03-23T14:05:13.348933+00:00",
+      "stop_loss": 0.43742624999999996,
       "status": "open"
     }
   },
@@ -64,17 +64,18 @@
     "1607587",
     "1652002",
     "1681592",
-    "1542957"
+    "1542957",
+    "1607684"
   ],
-  "total_realized_pnl": -21.43628757007556,
+  "total_realized_pnl": -22.336515754746458,
   "total_fees_paid": 0.00423896126304892,
-  "total_trades": 12,
+  "total_trades": 13,
   "winning_trades": 2,
-  "losing_trades": 7,
+  "losing_trades": 8,
   "peak_equity": 30.0,
-  "max_drawdown": 0.7075339196725311,
+  "max_drawdown": 0.7354261980563639,
   "daily_pnl": {
-    "2026-03-23": -21.43628757007556
+    "2026-03-23": -22.336515754746458
   },
-  "last_updated": "2026-03-23T12:35:33.958366+00:00"
+  "last_updated": "2026-03-23T14:05:13.348954+00:00"
 }

@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-03-23T12:35:34.014395+00:00",
+  "last_updated": "2026-03-23T14:05:13.408035+00:00",
   "summary": {
-    "equity": 8.47,
-    "cash": 1.21,
+    "equity": 7.57,
+    "cash": 0.45,
     "initial_capital": 30.0,
-    "total_return_pct": -71.78,
-    "realized_pnl": -21.44,
+    "total_return_pct": -74.78,
+    "realized_pnl": -22.34,
     "unrealized_pnl": -0.1,
-    "total_trades": 21,
+    "total_trades": 23,
     "winning_trades": 2,
-    "losing_trades": 7,
-    "win_rate": 22.2,
+    "losing_trades": 8,
+    "win_rate": 20.0,
     "fees_paid": 0.0,
     "peak_equity": 30.0,
-    "max_drawdown_pct": 70.75,
+    "max_drawdown_pct": 73.54,
     "open_positions": 3,
     "days_active": 1
   },
@@ -47,18 +47,18 @@
       "opened_at": "2026-03-23T10:40:40.512628+00:00"
     },
     {
-      "market_id": "1607684",
-      "question": "Will the price of Bitcoin be above $72,000 on March 23?",
+      "market_id": "1628640",
+      "question": "Will the price of Bitcoin be above $74,000 on March 24?",
       "side": "NO",
-      "entry_price": 0.909,
-      "current_price": 0.909,
-      "cost": 1.27,
-      "value": 1.27,
+      "entry_price": 0.8749,
+      "current_price": 0.8749,
+      "cost": 1.13,
+      "value": 1.13,
       "pnl": 0.0,
       "pnl_pct": 0.0,
       "strategy": "PENNY_PICK",
       "category": "crypto",
-      "opened_at": "2026-03-23T12:35:33.958353+00:00"
+      "opened_at": "2026-03-23T14:05:13.348933+00:00"
     }
   ],
   "equity_curve": [
@@ -79,39 +79,15 @@
       "equity": 8.47
     },
     {
-      "timestamp": "2026-03-23T12:35:34.014371+00:00",
-      "equity": 8.47
+      "timestamp": "2026-03-23T14:05:13.349975+00:00",
+      "equity": 7.57
+    },
+    {
+      "timestamp": "2026-03-23T14:05:13.408007+00:00",
+      "equity": 7.57
     }
   ],
   "recent_trades": [
-    {
-      "action": "OPEN",
-      "market_id": "1627630",
-      "question": "Pacers vs. Magic",
-      "side": "NO",
-      "price": 0.8793749999999999,
-      "shares": 5.11727078891258,
-      "amount_usd": 4.5,
-      "strategy": "PENNY_PICK",
-      "edge": 0.075,
-      "category": "other",
-      "timestamp": "2026-03-23T09:34:45.783202+00:00",
-      "cash_after": 21.0
-    },
-    {
-      "action": "OPEN",
-      "market_id": "1627600",
-      "question": "Grizzlies vs. Hawks",
-      "side": "NO",
-      "price": 0.8793749999999999,
-      "shares": 5.11727078891258,
-      "amount_usd": 4.5,
-      "strategy": "PENNY_PICK",
-      "edge": 0.075,
-      "category": "other",
-      "timestamp": "2026-03-23T09:34:45.783493+00:00",
-      "cash_after": 16.5
-    },
     {
       "action": "OPEN",
       "market_id": "1627632",
@@ -408,14 +384,47 @@
       "category": "crypto",
       "timestamp": "2026-03-23T12:35:33.958359+00:00",
       "cash_after": 1.2137124299244406
+    },
+    {
+      "action": "CLOSE",
+      "market_id": "1607684",
+      "question": "Will the price of Bitcoin be above $72,000 on March 23?",
+      "side": "NO",
+      "entry_price": 0.9090224999999998,
+      "exit_price": 0.26467,
+      "shares": 1.3971051321611954,
+      "cost_basis": 1.27,
+      "proceeds": 0.3697718153291036,
+      "pnl": -0.9002281846708964,
+      "pnl_pct": -70.88410902920444,
+      "reason": "stop_loss",
+      "strategy": "PENNY_PICK",
+      "category": "crypto",
+      "hold_time": "2026-03-23T12:35:33.958353+00:00",
+      "timestamp": "2026-03-23T14:05:13.342145+00:00",
+      "cash_after": 1.5834842452535443
+    },
+    {
+      "action": "OPEN",
+      "market_id": "1628640",
+      "question": "Will the price of Bitcoin be above $74,000 on March 24?",
+      "side": "NO",
+      "price": 0.8748524999999999,
+      "shares": 1.2916463060915984,
+      "amount_usd": 1.13,
+      "strategy": "PENNY_PICK",
+      "edge": 0.07769999999999996,
+      "category": "crypto",
+      "timestamp": "2026-03-23T14:05:13.348942+00:00",
+      "cash_after": 0.45348424525354436
     }
   ],
   "strategy_stats": {
     "PENNY_PICK": {
       "wins": 2,
-      "losses": 6,
-      "total_pnl": -17.52183128009688,
-      "trades": 8
+      "losses": 7,
+      "total_pnl": -18.422059464767777,
+      "trades": 9
     },
     "CALENDAR": {
       "wins": 0,
@@ -442,11 +451,11 @@
     },
     "crypto": {
       "wins": 2,
-      "losses": 0,
-      "total_pnl": 0.40914638605679565
+      "losses": 1,
+      "total_pnl": -0.49108179861410073
     }
   },
   "daily_pnl": {
-    "2026-03-23": -21.43628757007556
+    "2026-03-23": -22.336515754746458
   }
 }

@@ -337,5 +337,38 @@
     "category": "crypto",
     "timestamp": "2026-03-23T12:35:33.958359+00:00",
     "cash_after": 1.2137124299244406
+  },
+  {
+    "action": "CLOSE",
+    "market_id": "1607684",
+    "question": "Will the price of Bitcoin be above $72,000 on March 23?",
+    "side": "NO",
+    "entry_price": 0.9090224999999998,
+    "exit_price": 0.26467,
+    "shares": 1.3971051321611954,
+    "cost_basis": 1.27,
+    "proceeds": 0.3697718153291036,
+    "pnl": -0.9002281846708964,
+    "pnl_pct": -70.88410902920444,
+    "reason": "stop_loss",
+    "strategy": "PENNY_PICK",
+    "category": "crypto",
+    "hold_time": "2026-03-23T12:35:33.958353+00:00",
+    "timestamp": "2026-03-23T14:05:13.342145+00:00",
+    "cash_after": 1.5834842452535443
+  },
+  {
+    "action": "OPEN",
+    "market_id": "1628640",
+    "question": "Will the price of Bitcoin be above $74,000 on March 24?",
+    "side": "NO",
+    "price": 0.8748524999999999,
+    "shares": 1.2916463060915984,
+    "amount_usd": 1.13,
+    "strategy": "PENNY_PICK",
+    "edge": 0.07769999999999996,
+    "category": "crypto",
+    "timestamp": "2026-03-23T14:05:13.348942+00:00",
+    "cash_after": 0.45348424525354436
   }
 ]
