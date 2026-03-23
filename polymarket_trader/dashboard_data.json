@@ -1,50 +1,106 @@
 {
-  "last_updated": "2026-03-23T23:00:07.772764+00:00",
+  "last_updated": "2026-03-23T23:41:26.487493+00:00",
   "summary": {
-    "equity": 6.55,
-    "cash": 0.56,
+    "equity": 6.75,
+    "cash": 0.21,
     "initial_capital": 30.0,
-    "total_return_pct": -78.15,
-    "realized_pnl": -23.36,
-    "unrealized_pnl": -0.09,
-    "total_trades": 24,
-    "winning_trades": 2,
+    "total_return_pct": -77.51,
+    "realized_pnl": -23.16,
+    "unrealized_pnl": -0.1,
+    "total_trades": 30,
+    "winning_trades": 3,
     "losing_trades": 9,
-    "win_rate": 18.2,
+    "win_rate": 25.0,
     "fees_paid": 0.0,
     "peak_equity": 30.0,
     "max_drawdown_pct": 77.81,
-    "open_positions": 2,
+    "open_positions": 6,
     "days_active": 1
   },
   "positions": [
-    {
-      "market_id": "1627632",
-      "question": "Thunder vs. 76ers",
-      "side": "YES",
-      "entry_price": 0.9095,
-      "current_price": 0.915,
-      "cost": 4.5,
-      "value": 4.53,
-      "pnl": 0.03,
-      "pnl_pct": 0.6,
-      "strategy": "PENNY_PICK",
-      "category": "other",
-      "opened_at": "2026-03-23T09:34:45.783792+00:00"
-    },
     {
       "market_id": "1627640",
       "question": "Raptors vs. Jazz",
       "side": "YES",
       "entry_price": 0.8693,
-      "current_price": 0.805,
+      "current_price": 0.815,
       "cost": 1.58,
-      "value": 1.46,
-      "pnl": -0.12,
-      "pnl_pct": -7.4,
+      "value": 1.48,
+      "pnl": -0.1,
+      "pnl_pct": -6.2,
       "strategy": "PENNY_PICK",
       "category": "other",
       "opened_at": "2026-03-23T10:40:40.512628+00:00"
+    },
+    {
+      "market_id": "1542968",
+      "question": "Will Elon Musk post 400-419 tweets from March 17 to March 24, 2026?",
+      "side": "NO",
+      "entry_price": 0.8769,
+      "current_price": 0.8769,
+      "cost": 1.01,
+      "value": 1.01,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "strategy": "PENNY_PICK",
+      "category": "other",
+      "opened_at": "2026-03-23T23:41:26.416666+00:00"
+    },
+    {
+      "market_id": "1467765",
+      "question": "Will Crude Oil (CL) hit (HIGH) $110 by end of March?",
+      "side": "NO",
+      "entry_price": 0.8749,
+      "current_price": 0.8749,
+      "cost": 1.01,
+      "value": 1.01,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "strategy": "CALENDAR",
+      "category": "other",
+      "opened_at": "2026-03-23T23:41:26.417799+00:00"
+    },
+    {
+      "market_id": "1554932",
+      "question": "US escorts commercial ship through Hormuz by March 31?",
+      "side": "NO",
+      "entry_price": 0.8995,
+      "current_price": 0.8995,
+      "cost": 1.01,
+      "value": 1.01,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "strategy": "CALENDAR",
+      "category": "other",
+      "opened_at": "2026-03-23T23:41:26.418863+00:00"
+    },
+    {
+      "market_id": "1473066",
+      "question": "Will Bitcoin reach $80,000 in March?",
+      "side": "NO",
+      "entry_price": 0.8944,
+      "current_price": 0.8944,
+      "cost": 1.01,
+      "value": 1.01,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "strategy": "PENNY_PICK",
+      "category": "crypto",
+      "opened_at": "2026-03-23T23:41:26.419933+00:00"
+    },
+    {
+      "market_id": "1394368",
+      "question": "Will the U.S. invade Iran by March 31?",
+      "side": "NO",
+      "entry_price": 0.8688,
+      "current_price": 0.8688,
+      "cost": 1.01,
+      "value": 1.01,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "strategy": "CALENDAR",
+      "category": "geopolitics",
+      "opened_at": "2026-03-23T23:41:26.421056+00:00"
     }
   ],
   "equity_curve": [
@@ -109,115 +165,15 @@
       "equity": 6.55
     },
     {
-      "timestamp": "2026-03-23T23:00:07.772741+00:00",
-      "equity": 6.55
+      "timestamp": "2026-03-23T23:41:26.422177+00:00",
+      "equity": 6.75
+    },
+    {
+      "timestamp": "2026-03-23T23:41:26.487452+00:00",
+      "equity": 6.75
     }
   ],
   "recent_trades": [
-    {
-      "action": "OPEN",
-      "market_id": "1627644",
-      "question": "Nets vs. Trail Blazers",
-      "side": "NO",
-      "price": 0.9095249999999999,
-      "shares": 4.947637503092274,
-      "amount_usd": 4.5,
-      "strategy": "PENNY_PICK",
-      "edge": 0.05699999999999998,
-      "category": "sports",
-      "timestamp": "2026-03-23T09:34:45.784254+00:00",
-      "cash_after": 7.5
-    },
-    {
-      "action": "OPEN",
-      "market_id": "1581306",
-      "question": "Kharg Island no longer under Iranian control by March 31?",
-      "side": "NO",
-      "price": 0.8793749999999999,
-      "shares": 5.11727078891258,
-      "amount_usd": 4.5,
-      "strategy": "CALENDAR",
-      "edge": 0.0875,
-      "category": "geopolitics",
-      "timestamp": "2026-03-23T09:34:45.784612+00:00",
-      "cash_after": 3.0
-    },
-    {
-      "action": "CLOSE",
-      "market_id": "1627647",
-      "question": "Bucks vs. Clippers",
-      "side": "NO",
-      "entry_price": 0.8693249999999999,
-      "exit_price": 0.134325,
-      "shares": 5.1764299887844025,
-      "cost_basis": 4.5,
-      "proceeds": 0.6953239582434648,
-      "pnl": -3.8046760417565353,
-      "pnl_pct": -84.54835648347856,
-      "reason": "stop_loss",
-      "strategy": "PENNY_PICK",
-      "category": "other",
-      "hold_time": "2026-03-23T09:34:45.782833+00:00",
-      "timestamp": "2026-03-23T10:40:40.506095+00:00",
-      "cash_after": 3.6953239582434647
-    },
-    {
-      "action": "CLOSE",
-      "market_id": "1627630",
-      "question": "Pacers vs. Magic",
-      "side": "NO",
-      "entry_price": 0.8793749999999999,
-      "exit_price": 0.124375,
-      "shares": 5.11727078891258,
-      "cost_basis": 4.5,
-      "proceeds": 0.6364605543710021,
-      "pnl": -3.863539445628998,
-      "pnl_pct": -85.85643212508884,
-      "reason": "stop_loss",
-      "strategy": "PENNY_PICK",
-      "category": "other",
-      "hold_time": "2026-03-23T09:34:45.783195+00:00",
-      "timestamp": "2026-03-23T10:40:40.506666+00:00",
-      "cash_after": 4.331784512614467
-    },
-    {
-      "action": "CLOSE",
-      "market_id": "1627600",
-      "question": "Grizzlies vs. Hawks",
-      "side": "NO",
-      "entry_price": 0.8793749999999999,
-      "exit_price": 0.124375,
-      "shares": 5.11727078891258,
-      "cost_basis": 4.5,
-      "proceeds": 0.6364605543710021,
-      "pnl": -3.863539445628998,
-      "pnl_pct": -85.85643212508884,
-      "reason": "stop_loss",
-      "strategy": "PENNY_PICK",
-      "category": "other",
-      "hold_time": "2026-03-23T09:34:45.783487+00:00",
-      "timestamp": "2026-03-23T10:40:40.507246+00:00",
-      "cash_after": 4.968245066985469
-    },
-    {
-      "action": "CLOSE",
-      "market_id": "1627644",
-      "question": "Nets vs. Trail Blazers",
-      "side": "NO",
-      "entry_price": 0.9095249999999999,
-      "exit_price": 0.094525,
-      "shares": 4.947637503092274,
-      "cost_basis": 4.5,
-      "proceeds": 0.4676754349797972,
-      "pnl": -4.032324565020203,
-      "pnl_pct": -89.60721255600451,
-      "reason": "stop_loss",
-      "strategy": "PENNY_PICK",
-      "category": "sports",
-      "hold_time": "2026-03-23T09:34:45.784247+00:00",
-      "timestamp": "2026-03-23T10:40:40.507703+00:00",
-      "cash_after": 5.435920501965266
-    },
     {
       "action": "CLOSE",
       "market_id": "1581306",
@@ -448,14 +404,103 @@
       "hold_time": "2026-03-23T14:05:13.348933+00:00",
       "timestamp": "2026-03-23T15:31:48.648247+00:00",
       "cash_after": 0.5633678256285218
+    },
+    {
+      "action": "CLOSE",
+      "market_id": "1627632",
+      "question": "Thunder vs. 76ers",
+      "side": "YES",
+      "entry_price": 0.9095249999999999,
+      "exit_price": 0.950225,
+      "shares": 4.947637503092274,
+      "cost_basis": 4.5,
+      "proceeds": 4.701368846375856,
+      "pnl": 0.20136884637585606,
+      "pnl_pct": 4.474863252796801,
+      "reason": "time_exit_profit",
+      "strategy": "PENNY_PICK",
+      "category": "other",
+      "hold_time": "2026-03-23T09:34:45.783792+00:00",
+      "timestamp": "2026-03-23T23:41:26.020268+00:00",
+      "cash_after": 5.264736672004378
+    },
+    {
+      "action": "OPEN",
+      "market_id": "1542968",
+      "question": "Will Elon Musk post 400-419 tweets from March 17 to March 24, 2026?",
+      "side": "NO",
+      "price": 0.8768625,
+      "shares": 1.1518339534419593,
+      "amount_usd": 1.01,
+      "strategy": "PENNY_PICK",
+      "edge": 0.07649999999999997,
+      "category": "other",
+      "timestamp": "2026-03-23T23:41:26.416676+00:00",
+      "cash_after": 4.254736672004378
+    },
+    {
+      "action": "OPEN",
+      "market_id": "1467765",
+      "question": "Will Crude Oil (CL) hit (HIGH) $110 by end of March?",
+      "side": "NO",
+      "price": 0.8748524999999999,
+      "shares": 1.154480326683641,
+      "amount_usd": 1.01,
+      "strategy": "CALENDAR",
+      "edge": 0.09065,
+      "category": "other",
+      "timestamp": "2026-03-23T23:41:26.417809+00:00",
+      "cash_after": 3.244736672004378
+    },
+    {
+      "action": "OPEN",
+      "market_id": "1554932",
+      "question": "US escorts commercial ship through Hormuz by March 31?",
+      "side": "NO",
+      "price": 0.8994749999999999,
+      "shares": 1.1228772339420219,
+      "amount_usd": 1.01,
+      "strategy": "CALENDAR",
+      "edge": 0.0735,
+      "category": "other",
+      "timestamp": "2026-03-23T23:41:26.418872+00:00",
+      "cash_after": 2.234736672004378
+    },
+    {
+      "action": "OPEN",
+      "market_id": "1473066",
+      "question": "Will Bitcoin reach $80,000 in March?",
+      "side": "NO",
+      "price": 0.89445,
+      "shares": 1.1291855330091118,
+      "amount_usd": 1.01,
+      "strategy": "PENNY_PICK",
+      "edge": 0.06599999999999999,
+      "category": "crypto",
+      "timestamp": "2026-03-23T23:41:26.419941+00:00",
+      "cash_after": 1.2247366720043782
+    },
+    {
+      "action": "OPEN",
+      "market_id": "1394368",
+      "question": "Will the U.S. invade Iran by March 31?",
+      "side": "NO",
+      "price": 0.8688224999999999,
+      "shares": 1.1624929142603928,
+      "amount_usd": 1.01,
+      "strategy": "CALENDAR",
+      "edge": 0.09485,
+      "category": "geopolitics",
+      "timestamp": "2026-03-23T23:41:26.421065+00:00",
+      "cash_after": 0.21473667200437818
     }
   ],
   "strategy_stats": {
     "PENNY_PICK": {
-      "wins": 2,
+      "wins": 3,
       "losses": 8,
-      "total_pnl": -19.4421758843928,
-      "trades": 10
+      "total_pnl": -19.240807038016943,
+      "trades": 11
     },
     "CALENDAR": {
       "wins": 0,
@@ -466,9 +511,9 @@
   },
   "category_stats": {
     "other": {
-      "wins": 0,
+      "wins": 1,
       "losses": 5,
-      "total_pnl": -13.898653101133473
+      "total_pnl": -13.697284254757616
     },
     "sports": {
       "wins": 0,
@@ -487,6 +532,6 @@
     }
   },
   "daily_pnl": {
-    "2026-03-23": -23.35663217437148
+    "2026-03-23": -23.155263327995623
   }
 }
