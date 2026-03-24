@@ -1,20 +1,20 @@
 {
-  "last_updated": "2026-03-23T23:41:26.487493+00:00",
+  "last_updated": "2026-03-24T00:00:54.676402+00:00",
   "summary": {
-    "equity": 6.75,
-    "cash": 0.21,
+    "equity": 2.41,
+    "cash": 0.93,
     "initial_capital": 30.0,
-    "total_return_pct": -77.51,
-    "realized_pnl": -23.16,
+    "total_return_pct": -91.97,
+    "realized_pnl": -27.49,
     "unrealized_pnl": -0.1,
-    "total_trades": 30,
+    "total_trades": 35,
     "winning_trades": 3,
-    "losing_trades": 9,
-    "win_rate": 25.0,
+    "losing_trades": 14,
+    "win_rate": 17.6,
     "fees_paid": 0.0,
     "peak_equity": 30.0,
-    "max_drawdown_pct": 77.81,
-    "open_positions": 6,
+    "max_drawdown_pct": 91.57,
+    "open_positions": 1,
     "days_active": 1
   },
   "positions": [
@@ -31,76 +31,6 @@
       "strategy": "PENNY_PICK",
       "category": "other",
       "opened_at": "2026-03-23T10:40:40.512628+00:00"
-    },
-    {
-      "market_id": "1542968",
-      "question": "Will Elon Musk post 400-419 tweets from March 17 to March 24, 2026?",
-      "side": "NO",
-      "entry_price": 0.8769,
-      "current_price": 0.8769,
-      "cost": 1.01,
-      "value": 1.01,
-      "pnl": 0.0,
-      "pnl_pct": 0.0,
-      "strategy": "PENNY_PICK",
-      "category": "other",
-      "opened_at": "2026-03-23T23:41:26.416666+00:00"
-    },
-    {
-      "market_id": "1467765",
-      "question": "Will Crude Oil (CL) hit (HIGH) $110 by end of March?",
-      "side": "NO",
-      "entry_price": 0.8749,
-      "current_price": 0.8749,
-      "cost": 1.01,
-      "value": 1.01,
-      "pnl": 0.0,
-      "pnl_pct": 0.0,
-      "strategy": "CALENDAR",
-      "category": "other",
-      "opened_at": "2026-03-23T23:41:26.417799+00:00"
-    },
-    {
-      "market_id": "1554932",
-      "question": "US escorts commercial ship through Hormuz by March 31?",
-      "side": "NO",
-      "entry_price": 0.8995,
-      "current_price": 0.8995,
-      "cost": 1.01,
-      "value": 1.01,
-      "pnl": 0.0,
-      "pnl_pct": 0.0,
-      "strategy": "CALENDAR",
-      "category": "other",
-      "opened_at": "2026-03-23T23:41:26.418863+00:00"
-    },
-    {
-      "market_id": "1473066",
-      "question": "Will Bitcoin reach $80,000 in March?",
-      "side": "NO",
-      "entry_price": 0.8944,
-      "current_price": 0.8944,
-      "cost": 1.01,
-      "value": 1.01,
-      "pnl": 0.0,
-      "pnl_pct": 0.0,
-      "strategy": "PENNY_PICK",
-      "category": "crypto",
-      "opened_at": "2026-03-23T23:41:26.419933+00:00"
-    },
-    {
-      "market_id": "1394368",
-      "question": "Will the U.S. invade Iran by March 31?",
-      "side": "NO",
-      "entry_price": 0.8688,
-      "current_price": 0.8688,
-      "cost": 1.01,
-      "value": 1.01,
-      "pnl": 0.0,
-      "pnl_pct": 0.0,
-      "strategy": "CALENDAR",
-      "category": "geopolitics",
-      "opened_at": "2026-03-23T23:41:26.421056+00:00"
     }
   ],
   "equity_curve": [
@@ -169,91 +99,15 @@
       "equity": 6.75
     },
     {
-      "timestamp": "2026-03-23T23:41:26.487452+00:00",
-      "equity": 6.75
+      "timestamp": "2026-03-24T00:00:54.621406+00:00",
+      "equity": 2.41
+    },
+    {
+      "timestamp": "2026-03-24T00:00:54.676372+00:00",
+      "equity": 2.41
     }
   ],
   "recent_trades": [
-    {
-      "action": "CLOSE",
-      "market_id": "1581306",
-      "question": "Kharg Island no longer under Iranian control by March 31?",
-      "side": "NO",
-      "entry_price": 0.8793749999999999,
-      "exit_price": 0.114425,
-      "shares": 5.11727078891258,
-      "cost_basis": 4.5,
-      "proceeds": 0.585543710021322,
-      "pnl": -3.914456289978678,
-      "pnl_pct": -86.98791755508172,
-      "reason": "stop_loss",
-      "strategy": "CALENDAR",
-      "category": "geopolitics",
-      "hold_time": "2026-03-23T09:34:45.784606+00:00",
-      "timestamp": "2026-03-23T10:40:40.508201+00:00",
-      "cash_after": 6.021464211986588
-    },
-    {
-      "action": "OPEN",
-      "market_id": "1627640",
-      "question": "Raptors vs. Jazz",
-      "side": "YES",
-      "price": 0.8693249999999999,
-      "shares": 1.817502084950968,
-      "amount_usd": 1.58,
-      "strategy": "PENNY_PICK",
-      "edge": 0.081,
-      "category": "other",
-      "timestamp": "2026-03-23T10:40:40.512634+00:00",
-      "cash_after": 4.441464211986588
-    },
-    {
-      "action": "OPEN",
-      "market_id": "1607587",
-      "question": "Will the price of Ethereum be above $2,000 on March 23?",
-      "side": "YES",
-      "price": 0.8542499999999998,
-      "shares": 1.849575651155985,
-      "amount_usd": 1.58,
-      "strategy": "PENNY_PICK",
-      "edge": 0.09000000000000001,
-      "category": "crypto",
-      "timestamp": "2026-03-23T10:40:40.513137+00:00",
-      "cash_after": 2.861464211986588
-    },
-    {
-      "action": "OPEN",
-      "market_id": "1652002",
-      "question": "Will Elon Musk post 115-139 tweets from March 21 to March 23, 2026?",
-      "side": "NO",
-      "price": 0.8693249999999999,
-      "shares": 1.817502084950968,
-      "amount_usd": 1.58,
-      "strategy": "PENNY_PICK",
-      "edge": 0.081,
-      "category": "other",
-      "timestamp": "2026-03-23T10:40:40.513662+00:00",
-      "cash_after": 1.281464211986588
-    },
-    {
-      "action": "CLOSE",
-      "market_id": "1607587",
-      "question": "Will the price of Ethereum be above $2,000 on March 23?",
-      "side": "YES",
-      "entry_price": 0.8542499999999998,
-      "exit_price": 0.96316,
-      "shares": 1.849575651155985,
-      "cost_basis": 1.58,
-      "proceeds": 1.7814372841673987,
-      "pnl": 0.2014372841673986,
-      "pnl_pct": 12.749195200468263,
-      "reason": "take_profit",
-      "strategy": "PENNY_PICK",
-      "category": "crypto",
-      "hold_time": "2026-03-23T10:40:40.513130+00:00",
-      "timestamp": "2026-03-23T11:35:14.235254+00:00",
-      "cash_after": 3.0629014961539864
-    },
     {
       "action": "CLOSE",
       "market_id": "1652002",
@@ -493,27 +347,122 @@
       "category": "geopolitics",
       "timestamp": "2026-03-23T23:41:26.421065+00:00",
       "cash_after": 0.21473667200437818
+    },
+    {
+      "action": "CLOSE",
+      "market_id": "1542968",
+      "question": "Will Elon Musk post 400-419 tweets from March 17 to March 24, 2026?",
+      "side": "NO",
+      "entry_price": 0.8768625,
+      "exit_price": 0.11542000000000001,
+      "shares": 1.1518339534419593,
+      "cost_basis": 1.01,
+      "proceeds": 0.13294467490627096,
+      "pnl": -0.8770553250937291,
+      "pnl_pct": -86.83716090036921,
+      "reason": "stop_loss",
+      "strategy": "PENNY_PICK",
+      "category": "other",
+      "hold_time": "2026-03-23T23:41:26.416666+00:00",
+      "timestamp": "2026-03-24T00:00:54.612752+00:00",
+      "cash_after": 0.3476813469106491
+    },
+    {
+      "action": "CLOSE",
+      "market_id": "1467765",
+      "question": "Will Crude Oil (CL) hit (HIGH) $110 by end of March?",
+      "side": "NO",
+      "entry_price": 0.8748524999999999,
+      "exit_price": 0.134325,
+      "shares": 1.154480326683641,
+      "cost_basis": 1.01,
+      "proceeds": 0.15507556988178006,
+      "pnl": -0.85492443011822,
+      "pnl_pct": -84.64598318002177,
+      "reason": "stop_loss",
+      "strategy": "CALENDAR",
+      "category": "other",
+      "hold_time": "2026-03-23T23:41:26.417799+00:00",
+      "timestamp": "2026-03-24T00:00:54.613691+00:00",
+      "cash_after": 0.5027569167924292
+    },
+    {
+      "action": "CLOSE",
+      "market_id": "1554932",
+      "question": "US escorts commercial ship through Hormuz by March 31?",
+      "side": "NO",
+      "entry_price": 0.8994749999999999,
+      "exit_price": 0.104475,
+      "shares": 1.1228772339420219,
+      "cost_basis": 1.01,
+      "proceeds": 0.11731259901609273,
+      "pnl": -0.8926874009839073,
+      "pnl_pct": -88.38489118652546,
+      "reason": "stop_loss",
+      "strategy": "CALENDAR",
+      "category": "other",
+      "hold_time": "2026-03-23T23:41:26.418863+00:00",
+      "timestamp": "2026-03-24T00:00:54.614583+00:00",
+      "cash_after": 0.6200695158085219
+    },
+    {
+      "action": "CLOSE",
+      "market_id": "1473066",
+      "question": "Will Bitcoin reach $80,000 in March?",
+      "side": "NO",
+      "entry_price": 0.89445,
+      "exit_price": 0.114425,
+      "shares": 1.1291855330091118,
+      "cost_basis": 1.01,
+      "proceeds": 0.12920705461456763,
+      "pnl": -0.8807929453854324,
+      "pnl_pct": -87.20722231538934,
+      "reason": "stop_loss",
+      "strategy": "PENNY_PICK",
+      "category": "crypto",
+      "hold_time": "2026-03-23T23:41:26.419933+00:00",
+      "timestamp": "2026-03-24T00:00:54.615350+00:00",
+      "cash_after": 0.7492765704230895
+    },
+    {
+      "action": "CLOSE",
+      "market_id": "1394368",
+      "question": "Will the U.S. invade Iran by March 31?",
+      "side": "NO",
+      "entry_price": 0.8688224999999999,
+      "exit_price": 0.1527325,
+      "shares": 1.1624929142603928,
+      "cost_basis": 1.01,
+      "proceeds": 0.17755044902727543,
+      "pnl": -0.8324495509727246,
+      "pnl_pct": -82.42074762106184,
+      "reason": "stop_loss",
+      "strategy": "CALENDAR",
+      "category": "geopolitics",
+      "hold_time": "2026-03-23T23:41:26.421056+00:00",
+      "timestamp": "2026-03-24T00:00:54.616246+00:00",
+      "cash_after": 0.9268270194503649
     }
   ],
   "strategy_stats": {
     "PENNY_PICK": {
       "wins": 3,
-      "losses": 8,
-      "total_pnl": -19.240807038016943,
-      "trades": 11
+      "losses": 10,
+      "total_pnl": -20.998655308496105,
+      "trades": 13
     },
     "CALENDAR": {
       "wins": 0,
-      "losses": 1,
-      "total_pnl": -3.914456289978678,
-      "trades": 1
+      "losses": 4,
+      "total_pnl": -6.494517672053529,
+      "trades": 4
     }
   },
   "category_stats": {
     "other": {
       "wins": 1,
-      "losses": 5,
-      "total_pnl": -13.697284254757616
+      "losses": 8,
+      "total_pnl": -16.32195141095347
     },
     "sports": {
       "wins": 0,
@@ -522,16 +471,17 @@
     },
     "geopolitics": {
       "wins": 0,
-      "losses": 1,
-      "total_pnl": -3.914456289978678
+      "losses": 2,
+      "total_pnl": -4.746905840951403
     },
     "crypto": {
       "wins": 2,
-      "losses": 2,
-      "total_pnl": -1.511198218239123
+      "losses": 3,
+      "total_pnl": -2.3919911636245557
     }
   },
   "daily_pnl": {
-    "2026-03-23": -23.155263327995623
+    "2026-03-23": -23.155263327995623,
+    "2026-03-24": -4.337909652554013
   }
 }
