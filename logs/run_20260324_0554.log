@@ -1,0 +1,43 @@
+[CHECK] Raptors vs. Jazz — not in active list, checking API directly...
+  → CONFIRMED WIN: YES won!
+[TRADE] CLOSE YES | Raptors vs. Jazz
+        Entry: 0.869 → Exit: 1.000
+        P&L: $+0.23 (+14.7%) | Reason: resolved_win
+        Cash: $2.74
+
+[CHECK] Actions taken: 1
+  → resolved_win: 1627640
+
+======================================================================
+POLYMARKET SCANNER - 2026-03-24 05:54 UTC
+======================================================================
+
+Phase 1: Survival | Equity: $2.74 | Cash: $2.74
+Open positions: 0/6
+
+Fetching active markets...
+Found 194 tradeable markets
+Categories: {'other': 72, 'geopolitics': 41, 'sports': 34, 'politics': 28, 'crypto': 17, 'entertainment': 1, 'finance': 1}
+
+Running strategies...
+Raw signals found: 37
+Actionable signals: 0
+======================================================================
+POLYMARKET PAPER TRADING - PORTFOLIO SUMMARY
+======================================================================
+Phase: 1 - Survival (Conservative. Penny picking + high-conviction valu)
+Cash:           $      2.74
+Positions:               0
+
+Equity:         $      2.74
+Unrealized P&L: $     +0.00
+Realized P&L:   $    -27.26
+Total P&L:      $    -27.26
+Return:             -90.9%
+Fees Paid:      $      0.01
+Win Rate:       4/18 (22%)
+Max Drawdown:        91.6%
+Peak Equity:    $     30.00
+======================================================================
+[DASHBOARD] Exported to /home/runner/work/poly/poly/polymarket_trader/dashboard_data.json
+[DASHBOARD] Equity: $2.74 | Return: -90.9%

@@ -1,38 +1,23 @@
 {
-  "last_updated": "2026-03-24T04:48:54.958683+00:00",
+  "last_updated": "2026-03-24T05:54:59.038605+00:00",
   "summary": {
-    "equity": 2.48,
-    "cash": 0.93,
+    "equity": 2.74,
+    "cash": 2.74,
     "initial_capital": 30.0,
-    "total_return_pct": -91.73,
-    "realized_pnl": -27.49,
-    "unrealized_pnl": -0.03,
-    "total_trades": 35,
-    "winning_trades": 3,
+    "total_return_pct": -90.87,
+    "realized_pnl": -27.26,
+    "unrealized_pnl": 0.0,
+    "total_trades": 36,
+    "winning_trades": 4,
     "losing_trades": 14,
-    "win_rate": 17.6,
-    "fees_paid": 0.0,
+    "win_rate": 22.2,
+    "fees_paid": 0.01,
     "peak_equity": 30.0,
     "max_drawdown_pct": 91.57,
-    "open_positions": 1,
+    "open_positions": 0,
     "days_active": 1
   },
-  "positions": [
-    {
-      "market_id": "1627640",
-      "question": "Raptors vs. Jazz",
-      "side": "YES",
-      "entry_price": 0.8693,
-      "current_price": 0.855,
-      "cost": 1.58,
-      "value": 1.55,
-      "pnl": -0.03,
-      "pnl_pct": -1.6,
-      "strategy": "PENNY_PICK",
-      "category": "other",
-      "opened_at": "2026-03-23T10:40:40.512628+00:00"
-    }
-  ],
+  "positions": [],
   "equity_curve": [
     {
       "timestamp": "2026-03-23T09:34:45.784982+00:00",
@@ -115,30 +100,15 @@
       "equity": 2.48
     },
     {
-      "timestamp": "2026-03-24T04:48:54.958658+00:00",
-      "equity": 2.48
+      "timestamp": "2026-03-24T05:54:58.983951+00:00",
+      "equity": 2.74
+    },
+    {
+      "timestamp": "2026-03-24T05:54:59.038575+00:00",
+      "equity": 2.74
     }
   ],
   "recent_trades": [
-    {
-      "action": "CLOSE",
-      "market_id": "1652002",
-      "question": "Will Elon Musk post 115-139 tweets from March 21 to March 23, 2026?",
-      "side": "NO",
-      "entry_price": 0.8693249999999999,
-      "exit_price": 0.174125,
-      "shares": 1.817502084950968,
-      "cost_basis": 1.58,
-      "proceeds": 0.3164725505420873,
-      "pnl": -1.2635274494579127,
-      "pnl_pct": -79.97009173784258,
-      "reason": "stop_loss",
-      "strategy": "PENNY_PICK",
-      "category": "other",
-      "hold_time": "2026-03-23T10:40:40.513654+00:00",
-      "timestamp": "2026-03-23T11:35:14.604253+00:00",
-      "cash_after": 3.3793740466960736
-    },
     {
       "action": "OPEN",
       "market_id": "1542957",
@@ -454,14 +424,33 @@
       "hold_time": "2026-03-23T23:41:26.421056+00:00",
       "timestamp": "2026-03-24T00:00:54.616246+00:00",
       "cash_after": 0.9268270194503649
+    },
+    {
+      "action": "CLOSE",
+      "market_id": "1627640",
+      "question": "Raptors vs. Jazz",
+      "side": "YES",
+      "entry_price": 0.8693249999999999,
+      "exit_price": 1.0,
+      "shares": 1.817502084950968,
+      "cost_basis": 1.58,
+      "proceeds": 1.8127520432519486,
+      "pnl": 0.23275204325194856,
+      "pnl_pct": 14.731141977971426,
+      "reason": "resolved_win",
+      "strategy": "PENNY_PICK",
+      "category": "other",
+      "hold_time": "2026-03-23T10:40:40.512628+00:00",
+      "timestamp": "2026-03-24T05:54:58.596507+00:00",
+      "cash_after": 2.7395790627023135
     }
   ],
   "strategy_stats": {
     "PENNY_PICK": {
-      "wins": 3,
+      "wins": 4,
       "losses": 10,
-      "total_pnl": -20.998655308496105,
-      "trades": 13
+      "total_pnl": -20.765903265244155,
+      "trades": 14
     },
     "CALENDAR": {
       "wins": 0,
@@ -472,9 +461,9 @@
   },
   "category_stats": {
     "other": {
-      "wins": 1,
+      "wins": 2,
       "losses": 8,
-      "total_pnl": -16.32195141095347
+      "total_pnl": -16.08919936770152
     },
     "sports": {
       "wins": 0,
@@ -494,6 +483,6 @@
   },
   "daily_pnl": {
     "2026-03-23": -23.155263327995623,
-    "2026-03-24": -4.337909652554013
+    "2026-03-24": -4.105157609302065
   }
 }

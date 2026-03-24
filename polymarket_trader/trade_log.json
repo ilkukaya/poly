@@ -573,5 +573,24 @@
     "hold_time": "2026-03-23T23:41:26.421056+00:00",
     "timestamp": "2026-03-24T00:00:54.616246+00:00",
     "cash_after": 0.9268270194503649
+  },
+  {
+    "action": "CLOSE",
+    "market_id": "1627640",
+    "question": "Raptors vs. Jazz",
+    "side": "YES",
+    "entry_price": 0.8693249999999999,
+    "exit_price": 1.0,
+    "shares": 1.817502084950968,
+    "cost_basis": 1.58,
+    "proceeds": 1.8127520432519486,
+    "pnl": 0.23275204325194856,
+    "pnl_pct": 14.731141977971426,
+    "reason": "resolved_win",
+    "strategy": "PENNY_PICK",
+    "category": "other",
+    "hold_time": "2026-03-23T10:40:40.512628+00:00",
+    "timestamp": "2026-03-24T05:54:58.596507+00:00",
+    "cash_after": 2.7395790627023135
   }
 ]
