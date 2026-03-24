@@ -1,0 +1,41 @@
+[CHECK] Raptors vs. Jazz — not in active list, checking API directly...
+  → Market still open but not in active filter. Keeping position.
+[CHECK] All 1 positions stable.
+
+======================================================================
+POLYMARKET SCANNER - 2026-03-24 04:04 UTC
+======================================================================
+
+Phase 1: Survival | Equity: $2.48 | Cash: $0.93
+Open positions: 1/6
+
+Fetching active markets...
+Found 185 tradeable markets
+Categories: {'other': 66, 'geopolitics': 40, 'sports': 39, 'politics': 26, 'crypto': 12, 'entertainment': 1, 'finance': 1}
+
+Running strategies...
+Raw signals found: 36
+Actionable signals: 0
+======================================================================
+POLYMARKET PAPER TRADING - PORTFOLIO SUMMARY
+======================================================================
+Phase: 1 - Survival (Conservative. Penny picking + high-conviction valu)
+Cash:           $      0.93
+Positions:               1
+
+  Open Positions:
+  🔴 Raptors vs. Jazz
+     YES @ 0.869 → 0.855 | $1.55 (-1.6%) | PENNY_PICK
+
+Equity:         $      2.48
+Unrealized P&L: $     -0.03
+Realized P&L:   $    -27.49
+Total P&L:      $    -27.52
+Return:             -91.7%
+Fees Paid:      $      0.00
+Win Rate:       3/17 (18%)
+Max Drawdown:        91.6%
+Peak Equity:    $     30.00
+======================================================================
+[DASHBOARD] Exported to /home/runner/work/poly/poly/polymarket_trader/dashboard_data.json
+[DASHBOARD] Equity: $2.48 | Return: -91.7%
