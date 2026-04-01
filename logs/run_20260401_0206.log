@@ -1,0 +1,35 @@
+[CHECK] No open positions.
+
+======================================================================
+POLYMARKET SCANNER - 2026-04-01 02:06 UTC
+======================================================================
+
+Phase 1: Survival | Equity: $2.74 | Cash: $2.74
+Open positions: 0/6
+
+Fetching active markets...
+Found 164 tradeable markets
+Categories: {'other': 51, 'sports': 44, 'geopolitics': 31, 'politics': 29, 'crypto': 8, 'esports': 1}
+
+Running strategies...
+Raw signals found: 29
+Actionable signals: 0
+======================================================================
+POLYMARKET PAPER TRADING - PORTFOLIO SUMMARY
+======================================================================
+Phase: 1 - Survival (Conservative. Penny picking + high-conviction valu)
+Cash:           $      2.74
+Positions:               0
+
+Equity:         $      2.74
+Unrealized P&L: $     +0.00
+Realized P&L:   $    -27.26
+Total P&L:      $    -27.26
+Return:             -90.9%
+Fees Paid:      $      0.01
+Win Rate:       4/18 (22%)
+Max Drawdown:        91.6%
+Peak Equity:    $     30.00
+======================================================================
+[DASHBOARD] Exported to /home/runner/work/poly/poly/polymarket_trader/dashboard_data.json
+[DASHBOARD] Equity: $2.74 | Return: -90.9%
