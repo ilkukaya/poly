@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-07T11:30:04.940844+00:00",
+  "last_updated": "2026-06-07T13:02:19.974358+00:00",
   "summary": {
     "equity": 2.74,
     "cash": 2.74,
@@ -15,7 +15,7 @@
     "peak_equity": 30.0,
     "max_drawdown_pct": 91.57,
     "open_positions": 0,
-    "days_active": 75
+    "days_active": 76
   },
   "positions": [],
   "equity_curve": [
@@ -5520,7 +5520,11 @@
       "equity": 2.74
     },
     {
-      "timestamp": "2026-06-07T11:30:04.940799+00:00",
+      "timestamp": "2026-06-07T13:02:19.918629+00:00",
+      "equity": 2.74
+    },
+    {
+      "timestamp": "2026-06-07T13:02:19.974333+00:00",
       "equity": 2.74
     }
   ],
