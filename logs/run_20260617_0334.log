@@ -1,18 +1,18 @@
 [CHECK] No open positions.
 
 ======================================================================
-POLYMARKET SCANNER - 2026-05-29 00:19 UTC
+POLYMARKET SCANNER - 2026-06-17 03:34 UTC
 ======================================================================
 
 Phase 1: Survival | Equity: $2.74 | Cash: $2.74
 Open positions: 0/6
 
 Fetching active markets...
-Found 45 tradeable markets
-Categories: {'sports': 17, 'geopolitics': 16, 'other': 7, 'politics': 3, 'crypto': 2}
+Found 43 tradeable markets
+Categories: {'sports': 19, 'other': 14, 'geopolitics': 10}
 
 Running strategies...
-Raw signals found: 16
+Raw signals found: 14
 Actionable signals: 0
 ======================================================================
 POLYMARKET PAPER TRADING - PORTFOLIO SUMMARY
